@@ -1,29 +1,35 @@
 *** Setting ***
 Library    SeleniumLibrary
+Library    WebDriverManager
 
 *** Variables ***
-${username}    user1
-${password} =    pass
+${username} =   user
+${password} =    P@ssw0rd
+
 
 
 *** Test Cases ***
 Login Susscess With User1
     Open Browser And Click Login Link
     Login Suscess With User1    user1    
-    Click Button     Logout
-    Click Element    xpath://*[@id="NavbarHeaderLink"]
-    
+    Logout User 
+
+
 
 
     Sleep    6s
+
 *** Keywords ***
 Open Browser And Click Login Link
-    Open Browser                 https://acetoys.uk/our-story    Chrome
-    Click Element                id=LoginLink    
-    Element Should Be Visible    xpath:/html/body/div/div/div[2]/form/button
+    Open Browser                 https://edm.frappet.synology.me/    Chrome
+
 
 Login Suscess With User1
-    [Arguments]    ${user}    ${pass}=pass
+     [Arguments]    ${user}    ${pass}=pass
+    Sleep    1s
     Input Text        css=#username    ${username}    
-    Input Password    css=#password    ${password}    
-    Click Button      xpath:/html/body/div/div/div[2]/form/button
+    Input Password    css=#password    ${password}     
+    Click Button                    id=kc-login
+
+Logout User 
+    Click Element            xpath=(//i[text()='arrow_drop_down'])[1]

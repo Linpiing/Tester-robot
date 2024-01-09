@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240109 17:01:19.901" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo" source="/Users/linping/Desktop/Test/Robotframework/Tester-robot/Demo.robot">
+<test id="s1-t1" name="Login Susscess With User1" line="12">
+<kw name="Open Browser And Click Login Link">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://edm.frappet.synology.me/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240109 17:01:19.991" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me/'.</msg>
+<status status="PASS" starttime="20240109 17:01:19.991" endtime="20240109 17:01:22.907"/>
+</kw>
+<status status="PASS" starttime="20240109 17:01:19.991" endtime="20240109 17:01:22.907"/>
+</kw>
+<kw name="Login Suscess With User1">
+<arg>user1</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240109 17:01:23.909" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240109 17:01:22.908" endtime="20240109 17:01:23.910"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=#username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240109 17:01:23.911" level="INFO">Typing text 'user' into text field 'css=#username'.</msg>
+<status status="PASS" starttime="20240109 17:01:23.910" endtime="20240109 17:01:24.040"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>css=#password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240109 17:01:24.040" level="INFO">Typing password into text field 'css=#password'.</msg>
+<msg timestamp="20240109 17:01:24.056" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240109 17:01:24.087" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240109 17:01:24.040" endtime="20240109 17:01:24.087"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=kc-login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240109 17:01:24.088" level="INFO">Clicking button 'id=kc-login'.</msg>
+<status status="PASS" starttime="20240109 17:01:24.087" endtime="20240109 17:01:24.235"/>
+</kw>
+<status status="PASS" starttime="20240109 17:01:22.908" endtime="20240109 17:01:24.235"/>
+</kw>
+<kw name="Logout User">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=(//i[text()='arrow_drop_down'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240109 17:01:24.235" level="INFO">Clicking element 'xpath=(//i[text()='arrow_drop_down'])[1]'.</msg>
+<msg timestamp="20240109 17:01:24.440" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240109 17:01:24.440" level="FAIL">Element with locator 'xpath=(//i[text()='arrow_drop_down'])[1]' not found.</msg>
+<status status="FAIL" starttime="20240109 17:01:24.235" endtime="20240109 17:01:24.443"/>
+</kw>
+<status status="FAIL" starttime="20240109 17:01:24.235" endtime="20240109 17:01:24.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240109 17:01:24.444" endtime="20240109 17:01:24.444"/>
+</kw>
+<status status="FAIL" starttime="20240109 17:01:19.990" endtime="20240109 17:01:24.444">Element with locator 'xpath=(//i[text()='arrow_drop_down'])[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20240109 17:01:19.901" endtime="20240109 17:01:24.445"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240109 17:01:19.990" level="ERROR">Error in file '/Users/linping/Desktop/Test/Robotframework/Tester-robot/Demo.robot' on line 3: Importing library 'WebDriverManager' failed: ModuleNotFoundError: No module named 'WebDriverManager'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /opt/homebrew/bin
+  /opt/homebrew/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python39.zip
+  /opt/homebrew/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9
+  /opt/homebrew/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload
+  /opt/homebrew/lib/python3.9/site-packages</msg>
+</errors>
+</robot>
