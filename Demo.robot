@@ -20,7 +20,7 @@ Login User Page
     [Arguments]    ${user}    ${pass}=pass
     Sleep    1s
     Input Text        css=#username    ${username}    
-    Input Password    css=#password    ${password}     
+    Input Password    css=#password    ${password}    
     Click Button                    id=kc-login
     
 
