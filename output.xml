@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240111 17:03:09.415" rpa="false" schemaversion="4">
-<suite id="s1" name="Fileprocess" source="/Users/linping/Desktop/Test/Robotframework/AutomationTest/fileprocess.robot">
-<test id="s1-t1" name="Open Browser" line="75">
+<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240111 17:11:41.959" rpa="false" schemaversion="4">
+<suite id="s1" name="Login-Logout" source="/Users/linping/Desktop/Test/Robotframework/AutomationTest/login-logout.robot">
+<test id="s1-t1" name="Open Browser" line="33">
 <kw name="Open Browser And Click Login Link">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://edm.frappet.synology.me/admin</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240111 17:03:09.502" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me/admin'.</msg>
-<status status="PASS" starttime="20240111 17:03:09.502" endtime="20240111 17:03:11.866"/>
+<msg timestamp="20240111 17:11:42.044" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me/admin'.</msg>
+<status status="PASS" starttime="20240111 17:11:42.043" endtime="20240111 17:11:44.802"/>
 </kw>
-<status status="PASS" starttime="20240111 17:03:09.502" endtime="20240111 17:03:11.866"/>
+<status status="PASS" starttime="20240111 17:11:42.043" endtime="20240111 17:11:44.802"/>
 </kw>
-<status status="PASS" starttime="20240111 17:03:09.502" endtime="20240111 17:03:11.866"/>
+<status status="PASS" starttime="20240111 17:11:42.043" endtime="20240111 17:11:44.803"/>
 </test>
-<test id="s1-t2" name="Login Susscess" line="77">
+<test id="s1-t2" name="Login Susscess" line="36">
 <kw name="Login User Page">
 <arg>user1</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 17:03:12.869" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240111 17:03:11.867" endtime="20240111 17:03:12.869"/>
+<msg timestamp="20240111 17:11:45.806" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240111 17:11:44.804" endtime="20240111 17:11:45.806"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=#username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240111 17:03:12.875" level="INFO">Typing text 'admin' into text field 'css=#username'.</msg>
-<status status="PASS" starttime="20240111 17:03:12.870" endtime="20240111 17:03:13.013"/>
+<msg timestamp="20240111 17:11:45.810" level="INFO">Typing text 'admin' into text field 'css=#username'.</msg>
+<status status="PASS" starttime="20240111 17:11:45.807" endtime="20240111 17:11:45.940"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>css=#password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240111 17:03:13.013" level="INFO">Typing password into text field 'css=#password'.</msg>
-<msg timestamp="20240111 17:03:13.028" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240111 17:03:13.051" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240111 17:03:13.013" endtime="20240111 17:03:13.051"/>
+<msg timestamp="20240111 17:11:45.940" level="INFO">Typing password into text field 'css=#password'.</msg>
+<msg timestamp="20240111 17:11:45.956" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240111 17:11:45.982" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240111 17:11:45.940" endtime="20240111 17:11:45.982"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>css=#rememberMe</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20240111 17:11:45.982" level="INFO">Verifying checkbox 'css=#rememberMe' is not selected.</msg>
+<status status="PASS" starttime="20240111 17:11:45.982" endtime="20240111 17:11:46.002"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:11:50.004" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20240111 17:11:46.002" endtime="20240111 17:11:50.005"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id=kc-login</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240111 17:03:13.052" level="INFO">Clicking button 'id=kc-login'.</msg>
-<status status="PASS" starttime="20240111 17:03:13.051" endtime="20240111 17:03:13.203"/>
+<msg timestamp="20240111 17:11:50.006" level="INFO">Clicking button 'id=kc-login'.</msg>
+<status status="PASS" starttime="20240111 17:11:50.005" endtime="20240111 17:11:50.137"/>
 </kw>
-<status status="PASS" starttime="20240111 17:03:11.867" endtime="20240111 17:03:13.203"/>
+<status status="PASS" starttime="20240111 17:11:44.804" endtime="20240111 17:11:50.137"/>
 </kw>
-<status status="PASS" starttime="20240111 17:03:11.866" endtime="20240111 17:03:13.203"/>
+<status status="PASS" starttime="20240111 17:11:44.803" endtime="20240111 17:11:50.137"/>
 </test>
-<test id="s1-t3" name="Delete Doucument Process" line="86">
-<kw name="Delete Doucument">
+<test id="s1-t3" name="Logout User Process" line="40">
+<kw name="Logout User">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 17:03:15.205" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240111 17:03:13.204" endtime="20240111 17:03:15.205"/>
+<msg timestamp="20240111 17:11:52.140" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240111 17:11:50.137" endtime="20240111 17:11:52.141"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css=button[aria-label='ขยาย']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240111 17:11:52.143" level="INFO">Clicking button 'css=button[aria-label='ขยาย']'.</msg>
+<status status="PASS" starttime="20240111 17:11:52.141" endtime="20240111 17:11:52.197"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="cabinet"]/div[2]/div/div/div[2]/div[3]/div[1]/div/div[2]/button</arg>
+<arg>xpath=/html/body/div[2]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240111 17:03:15.207" level="INFO">Clicking element 'xpath=//*[@id="cabinet"]/div[2]/div/div/div[2]/div[3]/div[1]/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20240111 17:03:15.206" endtime="20240111 17:03:15.257"/>
+<msg timestamp="20240111 17:11:52.198" level="INFO">Clicking element 'xpath=/html/body/div[2]/div'.</msg>
+<status status="PASS" starttime="20240111 17:11:52.198" endtime="20240111 17:11:52.311"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="FileltemActiondelete"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240111 17:03:15.257" level="INFO">Clicking element 'xpath=//*[@id="FileltemActiondelete"]'.</msg>
-<status status="PASS" starttime="20240111 17:03:15.257" endtime="20240111 17:03:15.285"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 17:03:16.287" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240111 17:03:15.286" endtime="20240111 17:03:16.287"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="dialogDeleteConfirm"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240111 17:03:16.289" level="INFO">Clicking element 'xpath=//*[@id="dialogDeleteConfirm"]'.</msg>
-<status status="PASS" starttime="20240111 17:03:16.288" endtime="20240111 17:03:16.340"/>
-</kw>
-<status status="PASS" starttime="20240111 17:03:13.204" endtime="20240111 17:03:16.340"/>
+<status status="PASS" starttime="20240111 17:11:50.137" endtime="20240111 17:11:52.311"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>6s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 17:03:22.344" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20240111 17:03:16.340" endtime="20240111 17:03:22.346"/>
+<msg timestamp="20240111 17:11:58.312" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20240111 17:11:52.311" endtime="20240111 17:11:58.312"/>
 </kw>
-<status status="PASS" starttime="20240111 17:03:13.203" endtime="20240111 17:03:22.347"/>
+<status status="PASS" starttime="20240111 17:11:50.137" endtime="20240111 17:11:58.312"/>
 </test>
-<status status="PASS" starttime="20240111 17:03:09.416" endtime="20240111 17:03:22.349"/>
+<status status="PASS" starttime="20240111 17:11:41.959" endtime="20240111 17:11:58.313"/>
 </suite>
 <statistics>
 <total>
@@ -100,7 +100,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Fileprocess">Fileprocess</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Login-Logout">Login-Logout</stat>
 </suite>
 </statistics>
 <errors>
