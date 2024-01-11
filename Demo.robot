@@ -7,8 +7,8 @@ Library    SeleniumLibrary
 ${username}    admin
 ${password}    P@ssw0rd
 ${TEXT_FIELD_XPATH}    xpath=/html/body/div/div/div/div/main/section[2]/div[2]/div/div/div[2]/div[2]/aside/div/form/section[1]/label/div
-${TEXT_TO_ENTER}   Test Data 
-${TEXT_ENTER_PATH}  Test Data 2
+${TEXT_TO_ENTER}   Process Test(AutomationTest)
+${TEXT_ENTER_PATH}  Test Data
 ${clear}   false
 
 
@@ -49,7 +49,7 @@ Create File on Doucument
     sleep   2s
     Click Element   id=triggerFolderCreateFileItem
     sleep   2s
-    Input Text      css=input[placeholder='กรอกชื่อ']   ${TEXT_TO_ENTER}
+    Input Text      css=input[placeholder='กรอกชื่อ']   ${TEXT_ENTER_PATH}
     Click Element   id=FoldeSubmit
     sleep   2s
 
