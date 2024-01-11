@@ -1,116 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240111 15:09:31.441" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240111 17:03:09.415" rpa="false" schemaversion="4">
 <suite id="s1" name="Fileprocess" source="/Users/linping/Desktop/Test/Robotframework/AutomationTest/fileprocess.robot">
-<test id="s1-t1" name="Open Browser" line="69">
+<test id="s1-t1" name="Open Browser" line="75">
 <kw name="Open Browser And Click Login Link">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://edm.frappet.synology.me/admin</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240111 15:09:31.526" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me/admin'.</msg>
-<status status="PASS" starttime="20240111 15:09:31.526" endtime="20240111 15:09:34.645"/>
+<msg timestamp="20240111 17:03:09.502" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me/admin'.</msg>
+<status status="PASS" starttime="20240111 17:03:09.502" endtime="20240111 17:03:11.866"/>
 </kw>
-<status status="PASS" starttime="20240111 15:09:31.525" endtime="20240111 15:09:34.645"/>
+<status status="PASS" starttime="20240111 17:03:09.502" endtime="20240111 17:03:11.866"/>
 </kw>
-<status status="PASS" starttime="20240111 15:09:31.525" endtime="20240111 15:09:34.646"/>
+<status status="PASS" starttime="20240111 17:03:09.502" endtime="20240111 17:03:11.866"/>
 </test>
-<test id="s1-t2" name="Login Susscess" line="71">
+<test id="s1-t2" name="Login Susscess" line="77">
 <kw name="Login User Page">
 <arg>user1</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 15:09:35.648" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240111 15:09:34.647" endtime="20240111 15:09:35.649"/>
+<msg timestamp="20240111 17:03:12.869" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240111 17:03:11.867" endtime="20240111 17:03:12.869"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=#username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240111 15:09:35.655" level="INFO">Typing text 'admin' into text field 'css=#username'.</msg>
-<status status="PASS" starttime="20240111 15:09:35.649" endtime="20240111 15:09:35.809"/>
+<msg timestamp="20240111 17:03:12.875" level="INFO">Typing text 'admin' into text field 'css=#username'.</msg>
+<status status="PASS" starttime="20240111 17:03:12.870" endtime="20240111 17:03:13.013"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>css=#password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240111 15:09:35.809" level="INFO">Typing password into text field 'css=#password'.</msg>
-<msg timestamp="20240111 15:09:35.824" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240111 15:09:35.849" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240111 15:09:35.809" endtime="20240111 15:09:35.849"/>
+<msg timestamp="20240111 17:03:13.013" level="INFO">Typing password into text field 'css=#password'.</msg>
+<msg timestamp="20240111 17:03:13.028" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240111 17:03:13.051" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240111 17:03:13.013" endtime="20240111 17:03:13.051"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id=kc-login</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240111 15:09:35.850" level="INFO">Clicking button 'id=kc-login'.</msg>
-<status status="PASS" starttime="20240111 15:09:35.849" endtime="20240111 15:09:35.999"/>
+<msg timestamp="20240111 17:03:13.052" level="INFO">Clicking button 'id=kc-login'.</msg>
+<status status="PASS" starttime="20240111 17:03:13.051" endtime="20240111 17:03:13.203"/>
 </kw>
-<status status="PASS" starttime="20240111 15:09:34.647" endtime="20240111 15:09:35.999"/>
+<status status="PASS" starttime="20240111 17:03:11.867" endtime="20240111 17:03:13.203"/>
 </kw>
-<status status="PASS" starttime="20240111 15:09:34.646" endtime="20240111 15:09:35.999"/>
+<status status="PASS" starttime="20240111 17:03:11.866" endtime="20240111 17:03:13.203"/>
 </test>
-<test id="s1-t3" name="Edit Doucument Process" line="83">
-<kw name="Edit Doucument">
+<test id="s1-t3" name="Delete Doucument Process" line="86">
+<kw name="Delete Doucument">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 15:09:38.002" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240111 15:09:36.000" endtime="20240111 15:09:38.002"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>css=button[data-testid='actionProcess Test(AutomationTest)/']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240111 15:09:38.004" level="INFO">Clicking button 'css=button[data-testid='actionProcess Test(AutomationTest)/']'.</msg>
-<status status="PASS" starttime="20240111 15:09:38.003" endtime="20240111 15:09:38.068"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 15:09:40.069" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240111 15:09:38.068" endtime="20240111 15:09:40.070"/>
+<msg timestamp="20240111 17:03:15.205" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240111 17:03:13.204" endtime="20240111 17:03:15.205"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="FileltemActionEdit"]</arg>
+<arg>xpath=//*[@id="cabinet"]/div[2]/div/div/div[2]/div[3]/div[1]/div/div[2]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240111 15:09:40.072" level="INFO">Clicking element 'xpath=//*[@id="FileltemActionEdit"]'.</msg>
-<status status="PASS" starttime="20240111 15:09:40.070" endtime="20240111 15:09:40.127"/>
+<msg timestamp="20240111 17:03:15.207" level="INFO">Clicking element 'xpath=//*[@id="cabinet"]/div[2]/div/div/div[2]/div[3]/div[1]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20240111 17:03:15.206" endtime="20240111 17:03:15.257"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="FileltemActiondelete"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240111 17:03:15.257" level="INFO">Clicking element 'xpath=//*[@id="FileltemActiondelete"]'.</msg>
+<status status="PASS" starttime="20240111 17:03:15.257" endtime="20240111 17:03:15.285"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 15:09:41.131" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240111 15:09:40.127" endtime="20240111 15:09:41.131"/>
+<msg timestamp="20240111 17:03:16.287" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240111 17:03:15.286" endtime="20240111 17:03:16.287"/>
 </kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>css=input[placeholder='กรอกชื่อ']</arg>
-<arg>COMMAND+a</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20240111 15:09:41.134" level="INFO">Sending key(s) ('COMMAND+a',) to css=input[placeholder='กรอกชื่อ'] element.</msg>
-<msg timestamp="20240111 15:09:41.426" level="INFO">Pressing special key COMMAND down.</msg>
-<msg timestamp="20240111 15:09:41.426" level="INFO">Sending key a</msg>
-<msg timestamp="20240111 15:09:41.426" level="INFO">Releasing special key COMMAND.</msg>
-<status status="PASS" starttime="20240111 15:09:41.131" endtime="20240111 15:09:41.434"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dialogDeleteConfirm"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240111 17:03:16.289" level="INFO">Clicking element 'xpath=//*[@id="dialogDeleteConfirm"]'.</msg>
+<status status="PASS" starttime="20240111 17:03:16.288" endtime="20240111 17:03:16.340"/>
 </kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>css=input[placeholder='กรอกชื่อ']</arg>
-<arg>BACKSPACE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20240111 15:09:41.435" level="INFO">Sending key(s) ('BACKSPACE',) to css=input[placeholder='กรอกชื่อ'] element.</msg>
-<msg timestamp="20240111 15:09:41.709" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20240111 15:09:41.709" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20240111 15:09:41.434" endtime="20240111 15:09:41.719"/>
-</kw>
-<status status="PASS" starttime="20240111 15:09:36.000" endtime="20240111 15:09:41.719"/>
+<status status="PASS" starttime="20240111 17:03:13.204" endtime="20240111 17:03:16.340"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>6s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 15:09:47.721" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20240111 15:09:41.719" endtime="20240111 15:09:47.722"/>
+<msg timestamp="20240111 17:03:22.344" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20240111 17:03:16.340" endtime="20240111 17:03:22.346"/>
 </kw>
-<status status="PASS" starttime="20240111 15:09:35.999" endtime="20240111 15:09:47.722"/>
+<status status="PASS" starttime="20240111 17:03:13.203" endtime="20240111 17:03:22.347"/>
 </test>
-<status status="PASS" starttime="20240111 15:09:31.442" endtime="20240111 15:09:47.724"/>
+<status status="PASS" starttime="20240111 17:03:09.416" endtime="20240111 17:03:22.349"/>
 </suite>
 <statistics>
 <total>
