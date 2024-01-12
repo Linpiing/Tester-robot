@@ -24,35 +24,35 @@ Login User Page
     Click Button                    id=kc-login
 
 
-Create Doucument
-    sleep   2s
-    Click Element   id=triggerFolderCreateFileItem
-    sleep   2s
-    Input Text      css=input[placeholder='กรอกชื่อ']   ${TEXT_TO_ENTER} 
-    Click Element   id=FoldeSubmit
-    sleep   2s
-    
+# Create Doucument
+#     sleep   2s
+#     Click Element   id=triggerFolderCreateFileItem
+#     sleep   2s
+#     Input Text      css=input[placeholder='กรอกชื่อ']   ${TEXT_TO_ENTER} 
+#     Click Element   id=FoldeSubmit
+#     sleep   2s
 
-Create File on Doucument
-    Click Element   xpath=(//div[@class='box'])[1]
-    sleep   2s
-    Click Element   id=triggerFolderCreateFileItem
-    sleep   2s
-    Input Text      css=input[placeholder='กรอกชื่อ']   ${TEXT_ENTER_PATH}
-    Click Element   id=FoldeSubmit
-    sleep   2s
 
-# Edit Doucument
+# Create File on Doucument
+#     Click Element   xpath=(//div[@class='box'])[1]
+#     sleep   2s
+#     Click Element   id=triggerFolderCreateFileItem
+#     sleep   2s
+#     Input Text      css=input[placeholder='กรอกชื่อ']   ${TEXT_ENTER_PATH}
+#     Click Element   id=FoldeSubmit
+#     sleep   2s
+
+Edit Doucument
    
-#     sleep   2s
-#     Click Button    css=button[data-testid='actionProcess Test(AutomationTest)/']
-#     sleep   2s
-#     Click Element   xpath=//*[@id="FileltemActionEdit"]
-#     sleep   1s
-#     Press keys      css=input[placeholder='กรอกชื่อ']   COMMAND+a
-#     Press key       css=input[placeholder='กรอกชื่อ']   ${TEXT_EDIT} 
-#     sleep   1s
-#     Click Button    id=FoldeSubmit
+    sleep   2s
+    Click Button    css=button[data-testid='actionProcess Test(AutomationTest)/']
+    sleep   2s
+    Click Element   xpath=//*[@id="FileltemActionEdit"]
+    sleep   1s
+    Press keys      css=input[placeholder='กรอกชื่อ']   COMMAND+a
+    Press key       css=input[placeholder='กรอกชื่อ']   ${TEXT_EDIT} 
+    sleep   1s
+    Click Button    id=FoldeSubmit
           
     
 # Delete Doucument
@@ -70,17 +70,17 @@ Open Browser
 Login Susscess 
     Login User Page    user1
 
-Create Doucument File 
-    Create Doucument
+# Create Doucument File 
+#     Create Doucument
 
-Create On Doucument
-    Create File on Doucument
+# Create On Doucument
+#     Create File on Doucument
 
 # Delete Doucument Process
 #     Delete Doucument
 
-# Edit Doucument Process
-#     Edit Doucument
+Edit Doucument Process
+    Edit Doucument
 
 
     Sleep    6s
