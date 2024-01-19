@@ -20,13 +20,10 @@ Login User Page
     Input Password    css=#password    ${password}
     Click Button                    id=kc-login
 
-Search List 
+Search List
     sleep   1s
-    # Click Element   xpath=(//i[text()='arrow_drop_down'])[2]    
+    Click Element   xpath=(//i[text()='arrow_drop_down'])[2] 
     Input Text      css=input[placeholder='เอกสาร']  ${TEXT_ENTER}
-    Checkbox Should Be Selected    xpath=//div[@class='q-checkbox__bg absolute']
-    sleep   1s
-    
     Click Button    id=submitSearch
 
 # Search List Advanced
