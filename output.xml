@@ -1,138 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240112 15:23:54.750" rpa="false" schemaversion="4">
-<suite id="s1" name="Fileprocess" source="/Users/linping/Desktop/Test/Robotframework/AutomationTest/fileprocess.robot">
-<test id="s1-t1" name="Open Browser" line="68">
+<robot generator="Robot 6.1.1 (Python 3.9.18 on darwin)" generated="20240119 11:16:38.291" rpa="false" schemaversion="4">
+<suite id="s1" name="Searchlist" source="/Users/linping/Desktop/Test/Robotframework/AutomationTest/searchlist.robot">
+<test id="s1-t1" name="Open Browser" line="39">
 <kw name="Open Browser And Click Login Link">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://edm.frappet.synology.me/admin</arg>
+<arg>https://edm.frappet.synology.me</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240112 15:23:54.862" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me/admin'.</msg>
-<status status="PASS" starttime="20240112 15:23:54.862" endtime="20240112 15:23:57.167"/>
+<msg timestamp="20240119 11:16:38.379" level="INFO">Opening browser 'Chrome' to base url 'https://edm.frappet.synology.me'.</msg>
+<status status="PASS" starttime="20240119 11:16:38.378" endtime="20240119 11:16:41.265"/>
 </kw>
-<status status="PASS" starttime="20240112 15:23:54.862" endtime="20240112 15:23:57.167"/>
+<status status="PASS" starttime="20240119 11:16:38.378" endtime="20240119 11:16:41.265"/>
 </kw>
-<status status="PASS" starttime="20240112 15:23:54.862" endtime="20240112 15:23:57.167"/>
+<status status="PASS" starttime="20240119 11:16:38.378" endtime="20240119 11:16:41.266"/>
 </test>
-<test id="s1-t2" name="Login Susscess" line="70">
+<test id="s1-t2" name="Login Susscess" line="42">
 <kw name="Login User Page">
 <arg>user1</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240112 15:23:58.169" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240112 15:23:57.169" endtime="20240112 15:23:58.169"/>
+<msg timestamp="20240119 11:16:42.269" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240119 11:16:41.267" endtime="20240119 11:16:42.270"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=#username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240112 15:23:58.174" level="INFO">Typing text 'admin' into text field 'css=#username'.</msg>
-<status status="PASS" starttime="20240112 15:23:58.170" endtime="20240112 15:23:58.326"/>
+<msg timestamp="20240119 11:16:42.282" level="INFO">Typing text 'user' into text field 'css=#username'.</msg>
+<status status="PASS" starttime="20240119 11:16:42.274" endtime="20240119 11:16:42.425"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>css=#password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240112 15:23:58.326" level="INFO">Typing password into text field 'css=#password'.</msg>
-<msg timestamp="20240112 15:23:58.341" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240112 15:23:58.368" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240112 15:23:58.326" endtime="20240112 15:23:58.368"/>
+<msg timestamp="20240119 11:16:42.425" level="INFO">Typing password into text field 'css=#password'.</msg>
+<msg timestamp="20240119 11:16:42.440" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240119 11:16:42.466" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240119 11:16:42.425" endtime="20240119 11:16:42.466"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id=kc-login</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240112 15:23:58.369" level="INFO">Clicking button 'id=kc-login'.</msg>
-<status status="PASS" starttime="20240112 15:23:58.369" endtime="20240112 15:23:58.517"/>
+<msg timestamp="20240119 11:16:42.467" level="INFO">Clicking button 'id=kc-login'.</msg>
+<status status="PASS" starttime="20240119 11:16:42.466" endtime="20240119 11:16:42.628"/>
 </kw>
-<status status="PASS" starttime="20240112 15:23:57.168" endtime="20240112 15:23:58.517"/>
+<status status="PASS" starttime="20240119 11:16:41.266" endtime="20240119 11:16:42.628"/>
 </kw>
-<status status="PASS" starttime="20240112 15:23:57.168" endtime="20240112 15:23:58.517"/>
+<status status="PASS" starttime="20240119 11:16:41.266" endtime="20240119 11:16:42.628"/>
 </test>
-<test id="s1-t3" name="Edit Doucument Process" line="82">
-<kw name="Edit Doucument">
+<test id="s1-t3" name="Search Data" line="45">
+<kw name="Search List">
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240112 15:24:00.524" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240112 15:23:58.518" endtime="20240112 15:24:00.529"/>
+<msg timestamp="20240119 11:16:43.629" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240119 11:16:42.628" endtime="20240119 11:16:43.630"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>css=button[data-testid='actionProcess Test(AutomationTest)/']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240112 15:24:00.531" level="INFO">Clicking button 'css=button[data-testid='actionProcess Test(AutomationTest)/']'.</msg>
-<status status="PASS" starttime="20240112 15:24:00.530" endtime="20240112 15:24:00.594"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input[placeholder='เอกสาร']</arg>
+<arg>${TEXT_ENTER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240119 11:16:43.633" level="INFO">Typing text 'pdf' into text field 'css=input[placeholder='เอกสาร']'.</msg>
+<status status="PASS" starttime="20240119 11:16:43.630" endtime="20240119 11:16:43.699"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240112 15:24:02.597" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240112 15:24:00.594" endtime="20240112 15:24:02.597"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="FileltemActionEdit"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240112 15:24:02.599" level="INFO">Clicking element 'xpath=//*[@id="FileltemActionEdit"]'.</msg>
-<status status="PASS" starttime="20240112 15:24:02.598" endtime="20240112 15:24:02.656"/>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>xpath=//div[@class='q-checkbox__bg absolute']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20240119 11:16:43.699" level="INFO">Verifying checkbox 'xpath=//div[@class='q-checkbox__bg absolute']' is selected.</msg>
+<msg timestamp="20240119 11:16:43.864" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240119 11:16:43.864" level="FAIL">Checkbox with locator 'xpath=//div[@class='q-checkbox__bg absolute']' not found.</msg>
+<status status="FAIL" starttime="20240119 11:16:43.699" endtime="20240119 11:16:43.866"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240112 15:24:03.659" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240112 15:24:02.656" endtime="20240112 15:24:03.659"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>css=input[placeholder='กรอกชื่อ']</arg>
-<arg>COMMAND+a</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20240112 15:24:03.666" level="INFO">Sending key(s) ('COMMAND+a',) to css=input[placeholder='กรอกชื่อ'] element.</msg>
-<msg timestamp="20240112 15:24:03.959" level="INFO">Pressing special key COMMAND down.</msg>
-<msg timestamp="20240112 15:24:03.959" level="INFO">Sending key a</msg>
-<msg timestamp="20240112 15:24:03.959" level="INFO">Releasing special key COMMAND.</msg>
-<status status="PASS" starttime="20240112 15:24:03.660" endtime="20240112 15:24:03.966"/>
-</kw>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>css=input[placeholder='กรอกชื่อ']</arg>
-<arg>${TEXT_EDIT}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20240112 15:24:03.966" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20240112 15:24:03.966" endtime="20240112 15:24:04.013"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240112 15:24:05.015" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240112 15:24:04.013" endtime="20240112 15:24:05.016"/>
+<status status="NOT RUN" starttime="20240119 11:16:43.866" endtime="20240119 11:16:43.866"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>id=FoldeSubmit</arg>
+<arg>id=submitSearch</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240112 15:24:05.017" level="INFO">Clicking button 'id=FoldeSubmit'.</msg>
-<status status="PASS" starttime="20240112 15:24:05.016" endtime="20240112 15:24:05.073"/>
+<status status="NOT RUN" starttime="20240119 11:16:43.866" endtime="20240119 11:16:43.866"/>
 </kw>
-<status status="PASS" starttime="20240112 15:23:58.518" endtime="20240112 15:24:05.073"/>
+<status status="FAIL" starttime="20240119 11:16:42.628" endtime="20240119 11:16:43.866"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>6s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240112 15:24:11.074" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20240112 15:24:05.073" endtime="20240112 15:24:11.075"/>
+<status status="NOT RUN" starttime="20240119 11:16:43.867" endtime="20240119 11:16:43.867"/>
 </kw>
-<status status="PASS" starttime="20240112 15:23:58.518" endtime="20240112 15:24:11.076"/>
+<status status="FAIL" starttime="20240119 11:16:42.628" endtime="20240119 11:16:43.867">Checkbox with locator 'xpath=//div[@class='q-checkbox__bg absolute']' not found.</status>
 </test>
-<status status="PASS" starttime="20240112 15:23:54.751" endtime="20240112 15:24:11.078"/>
+<status status="FAIL" starttime="20240119 11:16:38.292" endtime="20240119 11:16:43.867"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Fileprocess">Fileprocess</stat>
+<stat pass="2" fail="1" skip="0" id="s1" name="Searchlist">Searchlist</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240112 15:24:03.966" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>
